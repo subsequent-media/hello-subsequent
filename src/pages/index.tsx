@@ -20,14 +20,14 @@ export default function Home() {
                 {/* <DotAnimation /> */}
                 {/* <Image src="/img/martin-engel-KLFB1AEPLwA-unsplash.jpg" alt="" width={400} height={200} /> */}
 
-                <p className="text-2xl my-6 font-semibold text-white sm:text-[2.5rem]">Your all-in-one solution for creating, presenting, and consuming procedurally generated art</p>
+                <p className="text-2xl my-6 font-semibold text-white sm:text-[2.5rem]">Welcome to your all-in-one solution for creating, presenting, and consuming procedurally generated art</p>
             </header>
 
             {/* <div className="w-full min-h-[50vh]" /> */}
 
             <article className="flex flex-col items-center">
-                <Card className="flex">
-                    <div className="w-1/3 h-auto">
+                <Card className="flex flex-col md:flex-row">
+                    <div className="w-full md:w-1/3 h-auto">
                         <Image
                             src="/img/reynier-carl-wf0c0d-h2fE-unsplash.jpg"
                             alt="man wearing headphones"
@@ -36,8 +36,8 @@ export default function Home() {
                             className="object-contain"
                             />
                     </div>
-                    <div className="w-2/3 pl-8 h-auto flex flex-col items-end">
-                        <h2 className="w-full font-bold text-3xl mb-5">Welcome artistic freedom into your everyday life</h2>
+                    <div className="w-full md:w-2/3 pl-8 h-auto flex flex-col items-end">
+                        <h2 className="md:text-right w-full font-bold text-3xl mb-5">Welcome artistic freedom into your life</h2>
 
                         <p className="md:text-right text-emerald-100 text-lg w-full">With Subsequent, you are free to sculpt your own soundscape.</p>
                         <p className="md:text-right text-lg w-full">
@@ -45,8 +45,6 @@ export default function Home() {
                             sound great to start and allow you deep influence into the sound you hear.
                         </p>
                     </div>
-
-
                 </Card>
 
                 <Card className="flex flex-col">
@@ -71,8 +69,8 @@ export default function Home() {
                     </ul> */}
                 </Card>
 
-                <Card className="flex">
-                    <div className="flex flex-col w-2/3 pr-8">
+                <Card className="flex flex-col md:flex-row">
+                    <div className="flex flex-col w-full md:w-2/3 pr-8">
                         <h2 className="font-bold text-3xl mb-5">Use it where you need it most</h2>
 
                         <p className="w-full md:w-3/4 md:text-left text-lg">Subsequent is, at its heart, a MIDI framework. Tell our system what you want it to do, and the result will be a continuous, live stream of MIDI messages.</p>
@@ -96,7 +94,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col w-1/3 h-auto justify-center">
+                    <div className="flex flex-col w-full md:w-1/3 h-auto justify-center">
                         <Image
                             src="/img/martin-engel-KLFB1AEPLwA-unsplash.jpg"
                             alt="a modular synthesizer"
@@ -124,12 +122,12 @@ export default function Home() {
                 </Card>
             </article>
 
-            <div className="w-full py-12 flex flex-col items-center bg-purple-700 text-white">
+            <div className="w-full px-8 md:px-0 py-12 flex flex-col items-center bg-purple-700 text-white">
                 <h2 className="text-4xl font-bold mb-4">Ready to learn more?</h2>
                 <p>We will have a mailing list put together soon so you can keep track of our progress. In the meantime...</p>
 
                 <div className="flex mt-8">
-                    <Card className="flex flex-col items-center text-center mr-8">
+                    <Card className="flex flex-col items-center text-center">
                         <Link href="https://github.com/subsequent-media/hello-subsequent">
                             Keep track of us on Github
                         </Link>
